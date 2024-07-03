@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wishlist Page</title>
+    <link rel="stylesheet" href="keranjang1.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navdiv">
+            <div class="logo">
+                <img class="img-logo" src="img/logo.png" alt="Logo">
+            </div>
+            <ul class="nav-link">
+                <li><a href="producthtml.html">Home</a></li>
+                <li><a href="producthtml.html">Product</a></li>
+                <li><a href="index.html">About Us</a></li>
+                <li><a href="keranjang1.html">Wishlist</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div id="wishlist" class="wishlist"></div> <!-- Added wishlist div -->
+    <script src="keranjang.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', displayWishlist);
+    </script>
+</body>
+</html>

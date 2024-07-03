@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Snooze & Snuggle Official Website</title>
+    <link href="bayar.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navdiv">
+            <div class="logo"><img class="img-logo" src="LOGO_WEB.png" alt="Logo"></div>
+            <ul class="nav-link">
+                <li><a href="producthtml.html">Home</a></li>
+                <li><a href="producthtml.html">Product</a></li>
+                <li><a href="index.html">About Us</a></li>
+                <li><a href="keranjang1.html">Wishlist</a></li>
+            </ul>
+        </div>
+        <div class="user-section">
+            <a href="#" class="nav-link"><img src="user.png" width="40">
+                <span class="username">Username</span>
+            </a>
+        </div>
+    </nav>
+
+    <div class="metode_bayar">
+        <div class="metdiv">
+            <div class="title">
+                <h4>Pilih Metode Pembayaran</h4>
+            </div>
+            <form id="paymentForm" action="#">
+                <div class="category">
+                    <input type="radio" name="pembayaran" id="DANA" value="DANA">
+                    <label for="DANA" class="DANAMethod">
+                        <div class="imgName">
+                            <div class="imgContainer DANA">
+                                <img src="Logo_DANA_-__dianisa.com-removebg-preview.png" alt="DANA">
+                            </div>
+                            <span class="name">DANA</span>
+                        </div>
+                        <span class="check"><i class="fa-solid fa-square-check"></i></span>
+                    </label>
+
+                    <input type="radio" name="pembayaran" id="QRIS" value="QRIS">
+                    <label for="QRIS" class="QRISMethod">
+                        <div class="imgName">
+                            <div class="imgContainer QRIS">
+                                <img src="QRIS (Quick Response Code Indonesia Standard) Logo (PNG480p) - Vector69Com.png" alt="QRIS">
+                            </div>
+                            <span class="name">QRIS</span>
+                        </div>
+                        <span class="check"><i class="fa-solid fa-square-check"></i></span>
+                    </label>
+
+                    <input type="radio" name="pembayaran" id="Go-Pay" value="Go-Pay">
+                    <label for="Go-Pay" class="GoPayMethod">
+                        <div class="imgName">
+                            <div class="imgContainer GoPay">
+                                <img src="Logo GoPay - Dianisa.com.png" alt="Go-Pay">
+                            </div>
+                            <span class="name">Go-Pay</span>
+                        </div>
+                        <span class="check"><i class="fa-solid fa-square-check"></i></span>
+                    </label>
+
+                    <input type="radio" name="pembayaran" id="ShopeePay" value="ShopeePay">
+                    <label for="ShopeePay" class="ShopeePay">
+                        <div class="imgName">
+                            <div class="imgContainer ShoppePay">
+                                <img src="Logo ShopeePay - Dianisa.com.png" alt="ShopeePay">
+                            </div>
+                            <span class="name">ShopeePay</span>
+                        </div>
+                        <span class="check"><i class="fa-solid fa-square-check"></i></span>
+                    </label>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Modal Structure -->
+    <div id="uploadModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <div class="modal-header">
+                <h4>Upload Bukti Pembayaran</h4>
+            </div>
+            <div class="modal-body">
+                <p id="selectedMethod"></p>
+                <input type="file" name="buktiPembayaran" accept="image/*" required>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-secondary" onclick="closeModal()">Cancel</button>
+                <button class="btn btn-primary" onclick="submitPayment()">Upload</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.querySelectorAll('.category input[type="radio"]').forEach(radio => {
+            radio.addEventListener('change', function() {
+                document.getElementById('selectedMethod').innerText = 'Metode Pembayaran: ' + this.value;
+                openModal();
+            });
+        });
+
+        function openModal() {
+            document.getElementById('uploadModal').style.display = 'flex';
+        }
+
+        function closeModal() {
+            document.getElementById('uploadModal').style.display = 'none';
+        }
+
+        function submitPayment() {
+            // Simulate form submission and redirect to success page
+            window.location.href = 'berhasil-bayar.html';
+        }
+    </script>
+</body>
+</html>

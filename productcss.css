@@ -1,0 +1,209 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.img-logo{
+    width: 170px;
+    height: 120px;
+    background-position: left;
+}
+
+.navbar{
+    background-color: #0F3845;
+    font-family: poppins;
+    padding-right: 15px;
+    padding-left: 15px;
+    height: 120px;
+}
+
+.navdiv{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-link{
+    text-align: left;
+    display: flex;
+    align-items: center;
+    margin-left: 25;
+    margin-right: auto;
+}
+
+li{
+    list-style: none;
+    display: inline-block;
+}
+
+li a{
+    text-decoration: none;
+    text-align: left;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    margin-left: auto;
+    margin-right: 25px;
+}
+
+button{
+    text-decoration: none;
+    background-color: white;
+    margin-left: 10px;
+    border-radius: 10px;
+    padding: 10px;
+    width: 70px;
+    height: 40px;
+}
+
+section{
+    padding: 14% 7%;
+}
+
+.productscreen{
+    width: 100%;
+    height:60vh;
+    background-image: url(imgps/tytyt.jpg);
+    background-position: center;
+    background-size: cover;
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    align-items: center;
+}
+
+.pstext h4{
+    color: brown;
+    font-size: 16px;
+    text-transform: capitalize;
+    font-weight: 500;
+
+}
+
+.pstext h1 {
+    color: black;
+    font-size: 65px;
+    text-transform: capitalize;
+    line-height: 1.1;
+    font-weight: 600;
+    margin: 6px 0 10px;
+}
+
+.pstext p{
+    color: gray;
+    font-size: 20px;
+    font-style: italic;
+    margin-bottom: 20px;
+}
+
+.shopatas-button{
+    display: inline-block;
+    color: black;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: capitalize;
+    border: 2px solid #111;
+    padding: 12px 25px;
+    transition: all .42s ease;
+}   
+
+.down-arrow{
+    position: absolute;
+    top: 130%;
+    right: 11%;
+}
+
+.down i{
+    font-size: 30px;
+    color: black;
+    border: 2px solid black;
+    border-radius: 50px;
+    padding: 12px 12px;
+}
+
+.down i:hover{
+    background-color: black;
+    color: white;
+    transition: all .42s ease;
+}
+
+.clickbuy{
+    display: inline-block;
+    color: black;
+    font-size: 12px;
+    font-weight: 500;
+    text-transform: capitalize;
+    border: 2px solid #111;
+    padding: 12px 25px;
+    transition: all .42s ease;
+    grid-template-columns: repeat(auto-fit,minmax(260px,auto));
+    right: 0;
+
+
+}
+
+header.sticky{
+    background: blanchedalmond;
+    padding: 15px 10%;
+    box-shadow: 0px 0px 10px rgb(red, green, blue);
+}
+
+.PRODUCT h3{
+    color: black;
+    font-size: 27px;
+    text-transform: capitalize;
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.PRODUCT span{
+    color: turquoise;
+}
+
+.the-product{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(260px,auto));
+    gap: 1rem;
+}
+
+.row{
+    position: relative;
+    transition: all .40s
+}
+
+.row img{
+    width: 100%;
+    height: auto;
+    transition: all .40s;
+
+}
+
+.row img:hover{
+    transform: scale(0.8);
+}
+
+.tulisandiproduk h5{
+    position: absolute;
+    top: 13px;
+    left: 13px;
+    color: white;
+    font-size: 12px;
+    font-weight: 500;
+    text-transform: uppercase;
+    background-color: red;
+    padding: 3px 10px;
+    border-radius: 2px;
+}
+
+.rating i{
+    color: orange;
+    font-size: 18px;
+}
+
+.love-icon{
+    position: absolute;
+    right: 0;
+    font-size: 20px;
+}
+
+.love-icon:hover{
+    color: red;
+}
